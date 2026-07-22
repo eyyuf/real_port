@@ -1,0 +1,123 @@
+.about {
+  padding: 100px 0;
+  position: relative;
+}
+
+.about__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  align-items: stretch;
+}
+
+.about__text-content {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.about__subtitle {
+  font-family: var(--font-title);
+  font-size: var(--fs-2xl);
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.about__description {
+  font-size: var(--fs-lg);
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+.about__education {
+  padding: 1.5rem;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.about__education-degree {
+  font-weight: 800;
+  font-size: var(--fs-base);
+  color: var(--text-primary);
+  font-family: var(--font-title);
+}
+
+.about__education-school {
+  color: var(--text-primary);
+  font-size: var(--fs-sm);
+}
+
+.about__education-year {
+  color: var(--text-primary);
+  font-size: var(--fs-sm);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.about__actions-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__action-card {
+  padding: 2.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.about__action-title {
+  font-family: var(--font-title);
+  font-size: var(--fs-2xl);
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.about__action-sub {
+  font-size: var(--fs-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.about__action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.about__btn {
+  width: 100%;
+  justify-content: center;
+  gap: 12px;
+  font-size: var(--fs-base);
+  padding: 1.2rem 2rem;
+}
+
+.about__btn--upwork {
+  border-color: var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.about__btn--upwork:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+@media (max-width: 992px) {
+  .about__layout {
+    grid-template-columns: 1fr;
+  }
+}
